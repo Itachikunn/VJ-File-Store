@@ -52,12 +52,13 @@ async def start(client, message):
         await db.add_user(message.from_user.id, message.from_user.first_name)
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/@Tech_VJ')
+            InlineKeyboardButton('💝 𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄 𝐘𝐎𝐔𝐓𝐔𝐁𝐄', url='https://youtube.com/@Team_Opmaster')
             ],[
-            InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', url=f'https://t.me/{BOT_USERNAME}?start=clone')
+            InlineKeyboardButton('𝗝𝗢𝗜𝗡 𝗙𝗢𝗥 𝗠𝗢𝗥𝗘 🥰', url='https://t.me/OPMASTERLECTURES')
             ],[
-            InlineKeyboardButton('💁‍♀️ ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ 🔻', callback_data='about')
+            InlineKeyboardButton('🅗̣̣̣ 🅐̣̣̣ 🅒̣̣̣ 🅚̣̣̣ 🅗̣̣̣ 🅔̣̣̣ 🅘̣̣̣ 🅢̣̣̣ 🅣̣̣̣ 😈', url='https://t.me/REAL_HACKHEIST')
+            ],[
+            InlineKeyboardButton('ⒸⓄⓃⓉⒶⒸⓉ', url='https://t.me/Onlymessages_bot')
         ]]
         me2 = (await client.get_me()).mention
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -180,12 +181,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.delete()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/@Tech_VJ')
+            InlineKeyboardButton('💝 𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄 𝐘𝐎𝐔𝐓𝐔𝐁𝐄', url='https://youtube.com/@Team_Opmaster')
             ],[
-            InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', url=f'https://t.me/{BOT_USERNAME}?start=clone')
+            InlineKeyboardButton('𝗝𝗢𝗜𝗡 𝗙𝗢𝗥 𝗠𝗢𝗥𝗘 🥰', url='https://t.me/OPMASTERLECTURES')
             ],[
-            InlineKeyboardButton('💁‍♀️ ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ 🔻', callback_data='about')
+            InlineKeyboardButton('🅗̣̣̣ 🅐̣̣̣ 🅒̣̣̣ 🅚̣̣̣ 🅗̣̣̣ 🅔̣̣̣ 🅘̣̣̣ 🅢̣̣̣ 🅣̣̣̣ 😈', url='https://t.me/REAL_HACKHEIST')
+            ],[
+            InlineKeyboardButton('ⒸⓄⓃⓉⒶⒸⓉ', url='https://t.me/Onlymessages_bot')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
