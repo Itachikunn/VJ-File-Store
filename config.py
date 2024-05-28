@@ -30,14 +30,14 @@ def is_enabled(value, default):
 # Ask Doubt on telegram @KingVJ01
       
 # Owner Information
-API_ID = int(environ.get("API_ID", ""))
-API_HASH = environ.get("API_HASH", "")
-ADMINS = int(environ.get("ADMINS", ""))
+API_ID = int(environ.get("API_ID", "24339011"))
+API_HASH = environ.get("API_HASH", "a85d1d917af0d4d02811a9a007b8dcda")
+ADMINS = int(environ.get("ADMINS", "6305381162"))
 
 # Database Information
-CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
+CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://Charliekun:Charliekun@cluster0.gkxb4gc.mongodb.net/")
 CDB_NAME = environ.get("CDB_NAME", "filesharexbot")
-DB_URI = environ.get("DB_URI", "")
+DB_URI = environ.get("DB_URI", "mongodb+srv://Baburao:Baburao@cluster0.iofbcqw.mongodb.net/")
 DB_NAME = environ.get("DB_NAME", "filesharexbot")
 
 # Don't Remove Credit Tg - @VJ_Botz
@@ -45,8 +45,8 @@ DB_NAME = environ.get("DB_NAME", "filesharexbot")
 # Ask Doubt on telegram @KingVJ01
 
 # Bot Information
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
-BOT_USERNAME = environ.get("BOT_USERNAME", "") # your bot username without @
+BOT_TOKEN = environ.get("BOT_TOKEN", 7295510148:AAFyZ3WGNka_mIPk0BEsyzociZc68pyUYHM"")
+BOT_USERNAME = environ.get("BOT_USERNAME", "Anastyleechbot") # your bot username without @
 PICS = (environ.get('PICS', 'https://telegra.ph/file/bd21f0b96f8af58016488.jpg https://telegra.ph/file/7d4804a95e7460fe9a925.jpg https://telegra.ph/file/a264bf1f2e134631f1dc8.jpg')).split() # Bot Start Picture
 
 # Auto Delete Information
@@ -54,7 +54,7 @@ AUTO_DELETE = int(environ.get("AUTO_DELETE", "2630000")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "157800000")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", ""))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002222085633"))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 
 # Don't Remove Credit Tg - @VJ_Botz
@@ -79,7 +79,7 @@ class Var(object):
     name = str(getenv('name', 'filetolinkvjbot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', ''))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002169071263'))
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
@@ -90,7 +90,7 @@ class Var(object):
         APP_NAME = str(getenv('APP_NAME'))
     
     else:
-        ON_HEROKU = False
+        ON_HEROKU = True
     FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',False))
     if HAS_SSL:
