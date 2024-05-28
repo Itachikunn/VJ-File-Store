@@ -45,7 +45,7 @@ DB_NAME = environ.get("DB_NAME", "filesharexbot")
 # Ask Doubt on telegram @KingVJ01
 
 # Bot Information
-BOT_TOKEN = environ.get("BOT_TOKEN", 7295510148:AAFyZ3WGNka_mIPk0BEsyzociZc68pyUYHM"")
+BOT_TOKEN = environ.get("BOT_TOKEN", "7295510148:AAFyZ3WGNka_mIPk0BEsyzociZc68pyUYHM")
 BOT_USERNAME = environ.get("BOT_USERNAME", "Anastyleechbot") # your bot username without @
 PICS = (environ.get('PICS', 'https://telegra.ph/file/bd21f0b96f8af58016488.jpg https://telegra.ph/file/7d4804a95e7460fe9a925.jpg https://telegra.ph/file/a264bf1f2e134631f1dc8.jpg')).split() # Bot Start Picture
 
