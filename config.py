@@ -55,7 +55,7 @@ AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "157800000")) # Time in S
 
 # Channel Information
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002222085633"))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002234089189')).split()]
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
